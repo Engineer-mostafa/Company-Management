@@ -5,5 +5,5 @@
 
 
 
-#Insert New Employee
-<img scr="Screenshot (103).png">
+# Insert New Employee
+<img src="Screenshot (103).png">
