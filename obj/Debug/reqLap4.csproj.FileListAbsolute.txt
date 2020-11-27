@@ -1,0 +1,10 @@
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\bin\Debug\reqLap4.exe.config
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\bin\Debug\reqLap4.exe
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\bin\Debug\reqLap4.pdb
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\obj\Debug\reqLap4.csprojAssemblyReference.cache
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\obj\Debug\reqLap4.Form1.resources
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\obj\Debug\reqLap4.Properties.Resources.resources
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\obj\Debug\reqLap4.csproj.GenerateResource.cache
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\obj\Debug\reqLap4.csproj.CoreCompileInputs.cache
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\obj\Debug\reqLap4.exe
+F:\Mostafa\CMP 2\semester 1\DB-MS\labs\Lab4 Accessing DB from C# - Part1-Semester\reqLap4\obj\Debug\reqLap4.pdb
