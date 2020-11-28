@@ -111,23 +111,38 @@ namespace reqLap4
             string month = "";
             string day = "";
             string year = "";
-            
-            for (int i = 0; i < dt.Length; i++)
+
+            for (int i = 0; i < 2; i++)
             {
-                if(dt[i] != '/' && month.Length <= 1)
+                if(dt[i] != '/')
                 {
                     month += dt[i];
+                    continue;
                 }
-                else if (dt[i] != '/' && day.Length <= 1)
-                {
-                    day += dt[i];
-                }else if (dt[i] != '/' && year.Length <= 3)
-                {
-                    year += dt[i];
-                }
-
+                break;
             }
 
+            for (int i = month.Length + 1; i < month.Length+3 ; i++)
+            {
+                if (dt[i] != '/')
+                {
+                    day += dt[i]; 
+                    continue;
+                }
+                break;
+            } 
+            
+            for (int i = month.Length + day.Length + 2; i < month.Length + day.Length + 6; i++)
+            {
+                if (dt[i] != '/')
+                {
+                    year += dt[i];
+                    continue;
+                }
+                break;
+            }
+             
+           
             try
             {
             var result = controllerObj.inserrtNewEmployee(
@@ -190,22 +205,36 @@ namespace reqLap4
                             string day = "";
                             string year = "";
 
-                            for (int i = 0; i < dt.Length; i++)
-                            {
-                                if (dt[i] != '/' && month.Length <= 1)
-                                {
-                                    month += dt[i];
-                                }
-                                else if (dt[i] != '/' && day.Length <= 1)
-                                {
-                                    day += dt[i];
-                                }
-                                else if (dt[i] != '/' && year.Length <= 3)
-                                {
-                                    year += dt[i];
-                                }
+                           for (int i = 0; i < 2; i++)
+            {
+                if(dt[i] != '/')
+                {
+                    month += dt[i];
+                    continue;
+                }
+                break;
+            }
 
-                            }
+            for (int i = month.Length + 1; i < month.Length+3 ; i++)
+            {
+                if (dt[i] != '/')
+                {
+                    day += dt[i]; 
+                    continue;
+                }
+                break;
+            } 
+            
+            for (int i = month.Length + day.Length + 2; i < month.Length + day.Length + 6; i++)
+            {
+                if (dt[i] != '/')
+                {
+                    year += dt[i];
+                    continue;
+                }
+                break;
+            }
+             
 
 
                             var result = controllerObj.UpdateEmployee(
@@ -260,5 +289,10 @@ namespace reqLap4
                 MessageBox.Show("You Should enter a number");
             }
 }
+
+        private void dateTimeBox_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
