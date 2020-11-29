@@ -141,8 +141,16 @@ namespace reqLap4
                 }
                 break;
             }
-             
-           
+            int j = 0;
+
+            if (!int.TryParse(ssnBox.Text , out j))
+            {
+                label17.Visible = true;
+            }
+            else
+            {
+                label17.Visible = false;
+            }
             try
             {
             var result = controllerObj.inserrtNewEmployee(
@@ -284,7 +292,17 @@ namespace reqLap4
             DataTable dt = controllerObj.SelectAllEmployeesdep(int.Parse(departmentNumbertoshow.Text));
             dataGridView1.DataSource = dt;
             dataGridView1.Refresh();
-        }catch(Exception error)
+            if(dataGridView1.Rows.Count == 1)
+                {
+                    label16.Visible = true;
+                }
+                else
+                {
+                    label16.Visible = false;
+
+                }
+            }
+            catch(Exception error)
             {
                 MessageBox.Show("You Should enter a number");
             }

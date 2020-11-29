@@ -37,7 +37,6 @@ namespace reqLap4
                 return myCommand.ExecuteNonQuery();
             }catch(Exception e)
             {
-                MessageBox.Show("An error occurred while connecting to the database! " + "/n" + e.Message);
                 return 0;             
             }
         }
@@ -58,8 +57,10 @@ namespace reqLap4
                 }
                 else
                 {
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
                     reader.Close();
-                    return null;
+                    return dt;
                 }
             }
             catch (Exception ex)

@@ -101,6 +101,10 @@ namespace reqLap4
             this.label5 = new System.Windows.Forms.Label();
             this.updatetitlepanel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.inserttitlepanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -413,6 +417,9 @@ namespace reqLap4
             // 
             // insertPanel
             // 
+            this.insertPanel.Controls.Add(this.label19);
+            this.insertPanel.Controls.Add(this.label18);
+            this.insertPanel.Controls.Add(this.label17);
             this.insertPanel.Controls.Add(this.listBox1);
             this.insertPanel.Controls.Add(this.button1);
             this.insertPanel.Controls.Add(this.dateTimeBox);
@@ -453,6 +460,7 @@ namespace reqLap4
             // 
             // showpanel
             // 
+            this.showpanel.Controls.Add(this.label16);
             this.showpanel.Controls.Add(this.showemployees);
             this.showpanel.Controls.Add(this.getthenumber);
             this.showpanel.Controls.Add(this.empNumber);
@@ -552,7 +560,7 @@ namespace reqLap4
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(17, 185);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(329, 198);
+            this.dataGridView1.Size = new System.Drawing.Size(329, 156);
             this.dataGridView1.TabIndex = 0;
             // 
             // showtitlepanel
@@ -845,11 +853,58 @@ namespace reqLap4
             this.label4.TabIndex = 5;
             this.label4.Text = "Delete / Update";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.Red;
+            this.label16.Location = new System.Drawing.Point(65, 348);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(240, 13);
+            this.label16.TabIndex = 50;
+            this.label16.Text = "The number of employees in this department is 0";
+            this.label16.Visible = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(257, 132);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(102, 13);
+            this.label17.TabIndex = 49;
+            this.label17.Text = "Should be a number";
+            this.label17.Visible = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(257, 241);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(71, 13);
+            this.label18.TabIndex = 50;
+            this.label18.Text = "Fill with value";
+            this.label18.Visible = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(257, 306);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(102, 13);
+            this.label19.TabIndex = 51;
+            this.label19.Text = "Should be a number";
+            this.label19.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 449);
+            this.ClientSize = new System.Drawing.Size(573, 450);
             this.Controls.Add(this.updatetitlepanel);
             this.Controls.Add(this.updatepanel);
             this.Controls.Add(this.insertPanel);
@@ -858,8 +913,8 @@ namespace reqLap4
             this.Controls.Add(this.showtitlepanel);
             this.Controls.Add(this.showpanel);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(589, 488);
-            this.MinimumSize = new System.Drawing.Size(589, 488);
+            this.MaximumSize = new System.Drawing.Size(589, 489);
+            this.MinimumSize = new System.Drawing.Size(589, 489);
             this.Name = "Form1";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -957,6 +1012,10 @@ namespace reqLap4
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
     }
 }
 

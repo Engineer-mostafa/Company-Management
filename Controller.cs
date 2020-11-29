@@ -70,8 +70,6 @@ namespace reqLap4
         public DataTable SelectAllEmployeesdep(int departmentNumber)
         {
             string query = "SELECT * FROM Employee WHERE Dno = '" + departmentNumber + "';";
-            MessageBox.Show(query);
-
             return dbMan.ExecuteReader(query);
         }
 
@@ -79,7 +77,6 @@ namespace reqLap4
         public int CountEmployeesproj(int projectNumber)
         {
             string query = "SELECT COUNT(SSN) FROM Employee as e , Works_On as wo  Where e.SSN = wo.Essn AND wo.Pno = '" + projectNumber + "' ;";
-
             return (int)dbMan.ExecuteScalar(query);
         }
     }
